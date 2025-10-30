@@ -1,0 +1,82 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+h1 {
+    background: linear-gradient(90deg,
+            #0008ff, #a200ff, #6a00ff, #a41ba9, #ff00ff, #eb2a6a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.instruccions {
+    padding: 1em;
+    margin: 1em;
+}
+
+p {
+    margin: 1em;
+}
+
+span {
+    font-weight: bold;
+    color: #3524f0;
+    font-size: 1em;
+}
+
+i {
+    margin-right: 1em;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform .2s;
+}
+
+i:hover {
+    animation: shake .4s linear infinite;
+
+}
+
+#contenidor {
+    border-radius: 1em;
+
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+
+    25% {
+        transform: translate(-3px, 0) rotate(-5deg);
+    }
+
+    50% {
+        transform: translate(3px, 0) rotate(5deg);
+    }
+
+    75% {
+        transform: translate(-3px, 0) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
